@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddTripViewController" customModule="TripDiary" customModuleProvider="target">
+            <connections>
+                <outlet property="addDateButton" destination="2YH-H0-cHV" id="cND-D4-Vnk"/>
+                <outlet property="specifyLocationButton" destination="gPV-ml-fiQ" id="SJC-HV-tBF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your adventure!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOc-hv-Zzz">
+                    <rect key="frame" x="20" y="99" width="353" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="MWX-Ki-XYZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPV-ml-fiQ">
+                    <rect key="frame" x="20" y="189" width="353" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2hG-Vt-g2C"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="tinted" title="Specify Your Location"/>
+                    <connections>
+                        <action selector="specifyLocationTapped:" destination="-1" eventType="touchUpInside" id="Vsk-sM-2mt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2YH-H0-cHV">
+                    <rect key="frame" x="20" y="259" width="165" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="HLi-Fk-PD5"/>
+                        <constraint firstAttribute="width" constant="165" id="I69-Li-Qal"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="tinted" title="Add Date"/>
+                    <connections>
+                        <action selector="addTripDateTapped:" destination="-1" eventType="touchUpInside" id="1Ja-Qn-vzT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUt-IU-Cvk">
+                    <rect key="frame" x="208" y="259" width="165" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="165" id="O80-uf-fZe"/>
+                        <constraint firstAttribute="height" constant="40" id="d9W-bh-JF8"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="tinted" title="Add Photos"/>
+                    <connections>
+                        <action selector="addPhotoTapped:" destination="-1" eventType="touchUpInside" id="G9W-yz-VEo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHy-Tr-6TI">
+                    <rect key="frame" x="40" y="419" width="313" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="QmP-Du-AIO"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Add your Trip!"/>
+                    <connections>
+                        <action selector="addTripTapped:" destination="-1" eventType="touchUpInside" id="3z0-jL-4xq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9b-m8-cBl">
+                    <rect key="frame" x="20" y="329" width="353" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="VWT-u4-9Xq"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="tinted" title="Add description"/>
+                    <connections>
+                        <action selector="addDescription:" destination="-1" eventType="touchUpInside" id="v90-AF-dad"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="2YH-H0-cHV" firstAttribute="top" secondItem="gPV-ml-fiQ" secondAttribute="bottom" constant="30" id="4m7-SF-aZZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BOc-hv-Zzz" secondAttribute="trailing" constant="20" id="57V-i8-7Kf"/>
+                <constraint firstItem="tUt-IU-Cvk" firstAttribute="top" secondItem="gPV-ml-fiQ" secondAttribute="bottom" constant="30" id="6YI-X2-B1L"/>
+                <constraint firstItem="PHy-Tr-6TI" firstAttribute="top" secondItem="R9b-m8-cBl" secondAttribute="bottom" constant="50" id="IYn-jg-9XI"/>
+                <constraint firstItem="BOc-hv-Zzz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="PJc-Xp-CRP"/>
+                <constraint firstItem="gPV-ml-fiQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Uri-GA-rCY"/>
+                <constraint firstItem="2YH-H0-cHV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="d0V-t2-8bs"/>
+                <constraint firstItem="gPV-ml-fiQ" firstAttribute="top" secondItem="BOc-hv-Zzz" secondAttribute="bottom" constant="50" id="dV0-sT-fid"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="R9b-m8-cBl" secondAttribute="trailing" constant="20" id="lfA-Nf-fmJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gPV-ml-fiQ" secondAttribute="trailing" constant="20" id="lga-qx-6k2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tUt-IU-Cvk" secondAttribute="trailing" constant="20" id="nAE-vr-t6g"/>
+                <constraint firstItem="PHy-Tr-6TI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="nnZ-II-Bmo"/>
+                <constraint firstItem="R9b-m8-cBl" firstAttribute="top" secondItem="2YH-H0-cHV" secondAttribute="bottom" constant="30" id="okj-aC-mbe"/>
+                <constraint firstItem="BOc-hv-Zzz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="tSi-Jm-EMv"/>
+                <constraint firstItem="R9b-m8-cBl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="xQk-eU-sBj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PHy-Tr-6TI" secondAttribute="trailing" constant="40" id="zya-z0-QI4"/>
+            </constraints>
+            <point key="canvasLocation" x="-524" y="-48"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

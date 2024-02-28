@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="TripDiary" customModuleProvider="target">
+            <connections>
+                <outlet property="mapView" destination="16P-CJ-xXP" id="qYv-WY-fpC"/>
+                <outlet property="searchBar" destination="fno-Gu-d9s" id="RDG-iM-O0N"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="fno-Gu-d9s">
+                    <rect key="frame" x="0.0" y="71" width="393" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="V4x-EA-42Z"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="WD6-NW-9xq"/>
+                    </connections>
+                </searchBar>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="16P-CJ-xXP">
+                    <rect key="frame" x="0.0" y="121" width="393" height="697"/>
+                    <standardMapConfiguration key="preferredConfiguration"/>
+                </mapView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="16P-CJ-xXP" secondAttribute="trailing" id="Cxo-W9-Dsb"/>
+                <constraint firstItem="16P-CJ-xXP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Gji-II-a3I"/>
+                <constraint firstItem="16P-CJ-xXP" firstAttribute="top" secondItem="fno-Gu-d9s" secondAttribute="bottom" constant="10" id="Kst-Qg-a81"/>
+                <constraint firstItem="fno-Gu-d9s" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="SzZ-Dw-LPH"/>
+                <constraint firstItem="fno-Gu-d9s" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gYO-3v-emb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="16P-CJ-xXP" secondAttribute="bottom" id="l0s-Ke-DUM"/>
+                <constraint firstItem="fno-Gu-d9s" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="12" id="si2-Si-Gl7"/>
+            </constraints>
+            <point key="canvasLocation" x="114" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
